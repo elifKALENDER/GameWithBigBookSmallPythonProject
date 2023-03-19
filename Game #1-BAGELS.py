@@ -78,56 +78,19 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 9,
+   "execution_count": 6,
    "id": "f42d3663",
    "metadata": {},
    "outputs": [
     {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "I have thought up a number.\n",
-      " You have 10 guesses to get it.\n",
-      "Guess #1: \n",
-      "> 137\n",
-      "Bagels\n",
-      "Guess #2: \n",
-      "> 524\n",
-      "Fermi Fermi\n",
-      "Guess #3: \n",
-      "> 520\n",
-      "Fermi\n",
-      "Guess #4: \n",
-      "> 504\n",
-      "Fermi Fermi\n",
-      "Guess #5: \n",
-      "> 594\n",
-      "Fermi Fermi\n",
-      "Guess #6: \n",
-      "> 584\n",
-      "You got it!\n",
-      "Do you want to play again? (yes or no)\n",
-      "> y\n",
-      "I have thought up a number.\n",
-      " You have 10 guesses to get it.\n",
-      "Guess #1: \n",
-      "> 122\n",
-      "Pico\n",
-      "Guess #2: \n",
-      "> 184\n",
-      "Pico\n",
-      "Guess #3: \n",
-      "> 571\n",
-      "Pico Pico\n",
-      "Guess #4: \n",
-      "> 516\n",
-      "Fermi Fermi\n",
-      "Guess #5: \n",
-      "> 716\n",
-      "You got it!\n",
-      "Do you want to play again? (yes or no)\n",
-      "> n\n",
-      "Thanks for playing!\n"
+     "ename": "NameError",
+     "evalue": "name 'getSecretNum' is not defined",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[1;32m~\\AppData\\Local\\Temp\\ipykernel_11876\\3351194567.py\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[0;32m      1\u001b[0m \u001b[1;32mwhile\u001b[0m \u001b[1;32mTrue\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m----> 2\u001b[1;33m     \u001b[0msecretNum\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mgetSecretNum\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m      3\u001b[0m     \u001b[0mprint\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;34m'I have thought up a number.'\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m      4\u001b[0m     \u001b[0mprint\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;34m' You have {} guesses to get it.'\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mformat\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mMAX_GUESSES\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m      5\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;31mNameError\u001b[0m: name 'getSecretNum' is not defined"
      ]
     }
    ],
@@ -161,7 +124,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 7,
+   "execution_count": null,
    "id": "6f564872",
    "metadata": {},
    "outputs": [],
@@ -178,7 +141,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 8,
+   "execution_count": null,
    "id": "d18cbbf9",
    "metadata": {},
    "outputs": [],
@@ -203,10 +166,27 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 7,
    "id": "c708da2b",
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Bagels, a deductive logic game.\n",
+      "    by Al Sweigart al@inventwithpython.com\n",
+      "    I am thinking of a 3-digit number with no repeated digits.\n",
+      "    Try to guess what it is. Here are some clues:\n",
+      "    When I say:    That means:\n",
+      "      Pico         One digit is correct but in the wrong position.\n",
+      "      Fermi        One digit is correct and in the right position.\n",
+      "      Bagels       No digit is correct.\n",
+      "    For example, if the secret number was 248 and your guess was 843, the \n",
+      "    clues would be Fermi Pico.\n"
+     ]
+    }
+   ],
    "source": [
     "if __name__== '__main__':\n",
     "    main()"
@@ -237,7 +217,7 @@
    "name": "python",
    "nbconvert_exporter": "python",
    "pygments_lexer": "ipython3",
-   "version": "3.9.12"
+   "version": "3.9.13"
   }
  },
  "nbformat": 4,
