@@ -1,3 +1,7 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
 
 
 """Bouncing DVD logo animation, you have to be "of a certain age" to appreciate this. Press Ctrl-C to stop.
@@ -5,6 +9,7 @@ NOTE: So not resize the terminal window whie this program running.
 Tags: short, artistic, bext"""
 
 
+# In[2]:
 
 
 import sys, random,time
@@ -18,16 +23,20 @@ except ImportError:
     sys.exit()
 
 
+# In[3]:
 
 
-# pip install Bext
+pip install Bext
 
 
+# In[4]:
 
 
 # Set up the constants:
 WIDTH, HEIGHT=bext.size()
 
+
+# In[5]:
 
 
 # We can't print to the last column on Windows without it adding a
@@ -46,7 +55,7 @@ DOWN_LEFT= 'dl'
 DIRECTIONS= (UP_RIGHT, UP_LEFT, DOWN_RIGHT, DOWN_LEFT)
 
 
-
+# In[6]:
 
 
 # Key names for logo dictionaries:
@@ -56,7 +65,7 @@ Y= 'y'
 DIR = 'directions'
 
 
-
+# In[11]:
 
 
 def main ():
@@ -160,6 +169,7 @@ def main ():
             
 
 
+# In[12]:
 
 
 # IF this program was run (instead of imported ), run the game:
@@ -171,6 +181,8 @@ if __name__ == '__main__':
         print('Bouncing DVD Logo,')
         sys.exit() # When CTRL - C pressed, end the program.
 
+
+# In[ ]:
 
 
 
